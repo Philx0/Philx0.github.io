@@ -13,7 +13,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const messaging=firebase.messaging();
-messaging.subscribeToTopic("notif");
 
 
 messaging.setBackgroundMessageHandler(function (payload) {
