@@ -23,7 +23,6 @@ init<!DOCTYPE html>
     firebase.initializeApp(firebaseConfig);
     //const messaging=firebase.messaging();
     const messaging=firebase.messaging()
-    messaging.subscribeToTopic("notif");
     function IntitalizeFireBaseMessaging() {
         messaging
             .requestPermission()
